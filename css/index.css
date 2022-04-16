@@ -1,0 +1,449 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+}
+
+/*---------HEADER------------*/
+
+.header {
+    color: white;
+    background-color: black;
+}
+
+.contenedor-header {
+    text-align: center;
+}
+
+.contenedor-header img {
+    height: 325px;
+    width: 325px;
+    margin-bottom: -50px;
+}
+
+.nombre-peluqueria h1{
+    font-size: 40px;
+}
+.nombre-peluqueria p{
+    font-size: large;
+}
+
+/*----HEADER-NAV----*/
+
+.navbar {
+    background-color: rgb(240, 187, 118) ;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.navbar li {
+    padding: 10px;
+    list-style: none;
+}
+
+.navbar a {
+    font-size: x-large;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar li:hover{
+    background-color: rgb(177, 157, 131);
+}
+
+/*--------------MAIN-----------*/
+
+            /*INDEX*/
+
+.main {
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    background-image:url(../img/barberia-main.jpg);
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.main h2 {
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color:black;
+    grid-column: 5/6;
+    grid-row: 2/3;
+    font-size: 50px;
+    color: rgb(177, 157, 131);
+}
+
+.contenedor-main {
+    border-radius: 20px;
+    background-color: black;
+    border: 1px solid white;
+    grid-column: 4/6;
+    grid-row: 5/6;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contenedor-main a {
+    margin-left: 38%;
+    width: 75px;
+    border-radius: 10px;
+    border: solid 1px white;
+    text-decoration: none;
+    color: white;
+}
+
+.contenedor-main a:hover {
+    background-color: rgb(177, 157, 131);
+    color: black;
+}
+
+            /*CONTACTO*/
+
+.main-contacto {
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    background-image:url(../img/OIP.jpg);
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+.formulario {
+    background-color: black;
+    grid-column: 2/9 ;
+    grid-row: 2/16;
+    border-radius: 10px;
+    border: white solid 1px;
+    padding-top: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.formulario h2 {
+    color: white;
+}
+
+.label {
+    display: flex;
+    padding-top: 10px ;
+}
+
+.form-textarea {
+    padding-top: 30px;
+}
+
+.form-terminos {
+    color: white;
+}
+
+.enviar {
+    border-radius: 10px;
+}
+
+.enviar:hover {
+    background-color:rgb(177, 157, 131) ;
+}
+
+            /*HISTORIA*/
+
+.main-histora {
+    height: 80vh;;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+.contenedor-comienzo {
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid black;
+    margin: 10px;
+    background-color: rgb(177, 157, 131);
+}
+
+.imagen-info-uno {
+    display: flex;
+    flex-direction: column;
+    border:solid 1px black;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(177, 157, 131);
+}
+
+.contenedor-p-uno {
+    border: black 1px solid;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color:rgb(240, 187, 118);
+}
+
+.imagen-info-dos {
+    display: flex;
+    flex-direction: column-reverse;
+    border:solid 1px black;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(177, 157, 131);
+}
+
+.contenedor-p-dos {
+    border: black 1px solid;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color:rgb(240, 187, 118);
+}
+
+            /*UBICACION*/
+
+.main-ubicacion {
+    background-color: white;
+    background-image: url(../img/OIP\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.titulo-ubicacion h1{
+    padding-top: 15px;
+    color: white;
+}
+
+.salon-uno{
+    border: 1px solid black;
+    margin: 15px;
+    background-color: rgb(177, 157, 131);
+    border-radius: 10px;
+
+}
+    
+.salon-dos{
+    border: 1px solid black;
+    margin: 15px;
+    background-color: rgb(177, 157, 131);
+    border-radius: 10px;
+}
+
+.horarios{
+    border: 1px solid black;
+    margin: 15px;
+    background-color: rgb(177, 157, 131);
+    border-radius: 10px;
+}
+
+.contenedor-maps iframe {
+    width: 100%;
+}
+
+/*--------------SERVICIOS----------*/
+
+.main-servicios{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titulo h1 {
+    color: white;
+}
+
+.contenedor-img img {
+    width: 100%;
+}
+
+.contenedor-precios ol{
+    list-style: none;
+}
+
+.contenedor-precios li{
+    color: white;
+}
+
+
+/*-----------FOOTER------------*/
+
+.footer {
+    border-top: 1px solid white;
+}
+
+.redes-sociales ul {
+    background-color: black;
+    padding:20px;
+    margin:0;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.redes-sociales a{
+    color: white; 
+
+    text-decoration: none;
+}
+
+.nav-footer {
+    display: none;
+}
+
+
+/*--------MEDIA-TABLET---------*/
+
+@media screen and (min-width: 475px){
+
+    /*----INDEX-----*/
+
+    .contenedor-main {
+        grid-column: 4/7;
+        grid-row: 5/6;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .contenedor-main a {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+}
+
+/*-------------700----------*/
+
+@media screen and (min-width: 700px){
+
+    .contenedor-main-servicios {
+        display: flex;
+    }
+
+}
+
+
+
+
+/*--------ESCRITORIO------------*/
+
+@media  screen and (min-width: 1199px) {
+
+    /*----INDEX-----*/
+
+
+.contenedor-main a {
+    margin-left: 42%;
+}
+
+    /*-----CONTACTO-----*/
+
+    .input {
+        height: 30px;
+        width: 300px;
+    }
+
+    #textarea {
+        width: 500px;
+    }
+
+    .enviar {
+        margin-bottom: 10px;
+    }
+
+    .formulario h2 {
+        font-size: 40px;
+    }
+
+    /*------HISTORIA-----*/
+
+    .imagen-info-uno {
+        flex-direction: row;
+    }
+
+    .imagen-info-dos {
+        flex-direction: row;
+    }
+
+    /*------UBICACION-----*/
+
+    .salones {
+
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    /*------SERVICIOS-----*/
+
+
+        /*HEADER*/
+
+.contenedor-header {
+    display: flex;
+}
+
+.nombre-peluqueria h1{
+    padding-top: 25%;
+    padding-left: 100px;
+}
+.nombre-peluqueria p{
+    padding-left: 100px;
+}
+
+        /*NAV*/
+
+.navbar ul{
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+        /*FOOTER*/
+
+.nav-footer{
+    display:contents;
+}
+
+.nav-footer li{
+    border-left: solid 3px white;
+    list-style: none;
+    padding: 5px;
+    padding-left: 30px;
+}
+
+.nav-footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+background-color: black;
+display: flex;
+justify-content: space-around;
+
+}
+
+.redes-sociales li{
+    padding: 5px;
+
+}
+
+}
